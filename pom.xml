@@ -14,12 +14,7 @@
         <sonar.host.url>http://3.107.185.224:9000/</sonar.host.url>
         <sonar.token>sqa_0e5052d5e56410f35204fdad77d103fcde8115de</sonar.token>
     </properties>
-    <repositories>
-        <repository>
-            <id>nexus</id>
-            <url>http://3.24.139.211:8081/repository/test-demo-proxy/</url>
-        </repository>
-    </repositories>
+   
 
     <distributionManagement>
         <repository>
