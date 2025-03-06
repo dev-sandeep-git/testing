@@ -17,18 +17,18 @@
     <repositories>
         <repository>
             <id>nexus</id>
-            <url>http://52.64.88.22:8081/repository/digi-ptoxy/</url>
+            <url>http://54.153.152.158:8081/repository/test-demo-proxy/</url>
         </repository>
     </repositories>
 
     <distributionManagement>
         <repository>
             <id>nexus</id>
-            <url>http://3.107.102.19:8081/repository/maven-release/</url>
+            <url>http://54.153.152.158:8081/repository/testing-demo-release/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
-            <url>http://3.107.102.19:8081/repository/maven-snapshots/</url>
+            <url>http://54.153.152.158:8081/repository/testing-demo-snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
 
