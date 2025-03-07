@@ -11,19 +11,19 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <sonar.host.url>http://13.55.109.119:9000/</sonar.host.url>
-        <sonar.token>sqa_9092691da5b02d60a96f6d0eb11f975b609c982f</sonar.token>
+        <sonar.host.url>http://13.239.136.176:9000/</sonar.host.url>
+        <sonar.token>sqa_fe3f2815a5407b8f7c6a00fd1cd453d44345362c</sonar.token>
     </properties>
    
 
     <distributionManagement>
         <repository>
             <id>nexus</id>
-            <url>http://13.55.115.117:8081/sandeep/repository/sandeep-releases/</url>
+            <url>http://52.63.171.94:8081/sandeep/repository/sandeep-releases//</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
-            <url>http://13.55.115.117:8081/sandeep/repository/sandeep-snapshot/</url>
+            <url>http://52.63.171.94:8081/sandeep/repository/sandeep-snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
 
