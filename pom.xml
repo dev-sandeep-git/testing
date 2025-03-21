@@ -65,7 +65,7 @@
     </build>
 </project>
 
-<build>
+
     <plugins>
         <!-- Tomcat Plugin for Deployment -->
         <plugin>
