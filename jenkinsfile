@@ -34,5 +34,11 @@ pipeline {
                 sh 'mvn deploy'
 }
 }
-}
+stage('Deploy to Tomcat') {
+            steps {
+                // Deploy WAR to Tomcat
+                sh 'mvn tomcat7:deploy'  // Use tomcat9:deploy if using Tomcat 9
+            }
+        }
+    }
 }
