@@ -64,3 +64,22 @@
         </plugins>
     </build>
 </project>
+
+<build>
+    <plugins>
+        <!-- Tomcat Plugin for Deployment -->
+        <plugin>
+            <groupId>org.apache.tomcat.maven</groupId>
+            <artifactId>tomcat9-maven-plugin</artifactId> <!-- This works for Tomcat 9 and above -->
+            <version>2.2</version>
+            <configuration>
+                <url>http://localhost:8080/manager/text</url> <!-- Tomcat Manager URL -->
+                <server>tomcat-server</server> <!-- This corresponds to the server id in settings.xml -->
+                <username>${tomcat.username}</username>
+                <password>${tomcat.password}</password>
+                <path>/your-app</path> <!-- Path where the app will be deployed -->
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
