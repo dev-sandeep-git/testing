@@ -19,7 +19,7 @@
     <distributionManagement>
         <repository>
             <id>nexus</id>
-            <url>http://54.252.242.253:8081/sandeep/repository/sandeep-releases/</url>
+            <url>http://54.252.242.253:8081/sandeep/repository/sandeep-snapshot/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
