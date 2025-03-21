@@ -75,9 +75,9 @@
             <configuration>
                 <url>http://localhost:8080/manager/text</url> <!-- Tomcat Manager URL -->
                 <server>tomcat-server</server> <!-- This corresponds to the server id in settings.xml -->
-                <username>${tomcat.username}</username>
-                <password>${tomcat.password}</password>
-                <path>/var/lib/jenkins/workspace/prizal/pom.xml</path> <!-- Path where the app will be deployed -->
+                <username>${devopssandeep}</username>
+                <password>${12345}</password>
+                <path>/var/lib/jenkins/workspace/prizal/pom.xml/</path> <!-- Path where the app will be deployed -->
             </configuration>
         </plugin>
     </plugins>
