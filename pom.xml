@@ -6,7 +6,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>maven-project</artifactId>
-    <version>2.2-SNAPSHOT</version> <!-- Changed version to avoid conflict -->
+    <version>2.2</version> <!-- Changed version to avoid conflict -->
     <packaging>jar</packaging>
 
     <properties>
