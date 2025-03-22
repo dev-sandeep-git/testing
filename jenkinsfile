@@ -38,10 +38,11 @@ pipeline {
         sshagent(['tomcatdeploy']) {
             sh """
             # Copy the file to Tomcat webapps directory
-            scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/prizal/target/maven-project-2.2-SNAPSHOT.jar ec2-user@3.25.108.170:/opt/apache-tomcat-11.0.4/webapps/
+            scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/prizal/target/maven-project-2.2-SNAPSHOT.jar ec2-user@3.25.108.170:/home/ec2-user
 
             # Change the ownership of the file using sudo
-            ssh -o StrictHostKeyChecking=no ec2-user@3.25.108.170 'sudo chown tomcat:tomcat /opt/apache-tomcat-11.0.4/webapps/maven-project-2.2-SNAPSHOT.jar'
+            ssh -o StrictHostKeyChecking=no ec2-user@3.25.108.170 'sudo mv /home/ec2-user/maven-project-2.2-SNAPSHOT.jar /opt//opt/apache-tomcat-11.0.4/webapps
+ && sudo chown tomcat:tomcat /opt/apache-tomcat-11.0.4/webapps/maven-project-2.2-SNAPSHOT.jar'
             """
         }
     }
