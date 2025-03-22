@@ -37,8 +37,15 @@ pipeline {
 stage('Deploy to Tomcat') {
             steps {
                 // Deploy WAR to Tomcat
-                sh 'mvn tomcat7:deploy'  // Use tomcat9:deploy if using Tomcat 9
+                sshagent([ID])
+                sh """
+                scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/prizal/target/maven-project-2.2-SNAPSHOT.jar ec2-user@3.25.108.170:/opt/apache-tomcat-11.0.4/webapps
+                ssh -o StrictHostKeyChecking=no ec2-user@3.25.108.170 """
+
+
+
+
             }
         }
-    }
+    } 
 }
