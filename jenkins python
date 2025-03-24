@@ -6,7 +6,8 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/dev-ajay-git/python-project.git'
+                git 'https://github.com/dev-sandeep-git/testing.git'
+                                                                    
             }
         }
         stage('Install Dependencies') {
